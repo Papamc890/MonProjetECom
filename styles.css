@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Monsieur+La+Doulaise&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.contenair-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+    background-color: #f8f9fa;
+    border-bottom: none;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.desktop-nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.desktop-nav .liste {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.desktop-nav .liste a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s;
+}
+
+.desktop-nav .liste a:hover {
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+    border-radius: 5px 5px 5px;
+    padding-bottom: 5px;
+}
+
+.nav-menu {
+    display: none;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-menu .liste {
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-menu .liste a {
+    font-size: 1.2rem;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-menu .liste a:hover {
+    color: #007bff;
+}
+.liste{
+    list-style: none;
+    margin-left: 30px;
+
+}
+.liste a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s;
+}
+.liste a:hover{
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+    border-radius: 5px 5px 5px;
+    padding-bottom: 5px;
+    
+}
+.logo{
+    color: #007bff;
+    
+}
+
+.btn-nav{
+    display: flex;
+    gap: 30px;
+   
+}
+.btn-nav a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #333;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-nav a:hover {
+    background-color: #007bff; 
+    color: white; 
+    transform: scale(1.2); 
+}
+
+.content{
+   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(images/ordi22.jpg);
+    
+    height: 64vh;
+ 
+    background-position: center;
+     background-size: cover;
+   background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+  
+   
+}
+
+.titre1{
+    font-size: 60px;
+    line-height: 60px;
+    color: #000;
+
+}
+.demain{
+    color: #007bff;
+    
+}
+.p1{
+    color: #000;
+    opacity: 0.7; 
+    margin-top: 20px;
+}
+.btn{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    height: 50px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #0f0101;
+    font-size: 14px;
+}
+.btn-savoir {
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+      box-shadow: 0 0 0 2px rgba(167, 158, 158, 0.2), 
+            0 0 25px rgba(222, 216, 216, 0.3); 
+            
+
+}
+.btn-decouvre{
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    background: #007bff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+   
+}
+.btn-decouvre a i{
+    margin-left: 20px;
+}
+.populaire{
+    text-align: center;
+    margin-top: 70px;
+   
+}
+.p2{
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+
+
+
+
+ 
+.produits {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+
+.carte {
+    width: 300px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 0 2px rgba(167, 158, 158, 0.2), 
+            0 0 25px rgba(222, 216, 216, 0.3);
+}
+
+
+.image {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+.titre-produit {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.categorie {
+    background: #007bff;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+.prix {
+    font-size: 20px;
+    color: #007bff;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+.btn-panier {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.btn-panier:hover {
+    background-color: #0056b3;
+}
+
+.footer{
+    margin: 40px auto;
+    box-shadow: 0 0 0 2px rgba(167, 158, 158, 0.2), 
+            0 0 25px rgba(222, 216, 216, 0.3);
+            height: 300px;
+            width: 1400px;
+}
+.contenair-footer{
+    display: flex;
+    justify-content: center;
+    gap: 230px;
+    
+}
+.logo2{
+    font-size: 15px;
+    line-height: 66px;
+}
+.distination{
+    color: #000;
+    opacity: 0.5;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.distination li {
+    margin-bottom: 10px;
+}
+.tech{
+    color: #0056b3;
+}
+
+.icones{
+    display: flex;
+    gap: 30px;
+}
+
+.icones i:hover{
+    color: #0056b3;
+}
+
+hr{
+    margin-top: 38px;
+    width: 1300px;
+    margin-left: 50px;
+    opacity: 0.5;
+}
+
+.texte-pied{
+    text-align: center;
+    margin-top: 20px;
+    color: #000;
+    opacity: 0.5;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .contenair-nav {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .btn-nav {
+        margin-top: 10px;
+    }
+
+    .content {
+        padding: 0 5%;
+        text-align: center;
+        height: auto;
+        min-height: 40vh;
+        
+    }
+
+    .titre1 {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-left: 20px;
+    }
+
+    .p1 {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .btn-decouvre, .btn-savoir {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .produits {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .carte {
+        width: 95%;
+        max-width: 320px;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 20px 10px;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .contenair-footer {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-footer {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo2 {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .distination li {
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+    }
+
+    .icones {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    hr {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .texte-pied {
+        margin-top: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenair-nav {
+        padding: 10px 40px;
+    }
+
+    .produits {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .carte {
+        width: 45%;
+    }
+
+    .footer {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .contenair-footer {
+        gap: 100px;
+    }
+}
+
